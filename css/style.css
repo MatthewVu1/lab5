@@ -5,6 +5,9 @@ nav{
     background-color: lightblue;
     text-align: center;
 }
+ul.nav li{
+    display: inline;
+}
 h1{
     font-family: Montserrat, sans-serif;;
 }
@@ -12,31 +15,32 @@ h1{
     content: "\a";
     white-space: pre;
 }
-#l2::after{
-    content: "\a";
-    white-space: pre;
+
+ul > hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
-#l3::after{
-    content: "\a";
-    white-space: pre;
+
+div.course{
+    display: grid;
+    grid-template-columns: 500px 3fr;
 }
-#l4::after{
-    content: "\a";
-    white-space: pre;
+
+div.class_desc{
+    float: left;
 }
-#l5::after{
-    content: "\a";
-    white-space: pre;
-}
-#l6::after{
-    content: "\a";
-    white-space: pre;
-}
-#l7::after{
-    content: "\a";
-    white-space: pre;
-}
-#l8::after{
-    content: "\a";
-    white-space: pre;
+
+
+@media only screen and (max-width: 600px){
+    div.course_desc{
+       grid-row: 2;
+    }
+    ul.nav li{
+        display: block;
+    }
 }
